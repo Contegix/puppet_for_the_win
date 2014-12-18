@@ -141,9 +141,9 @@
         </Directory>
       </Directory>
       <!-- The application itself -->
-      <Directory Id="$(var.PlatformProgramFilesFolder)" >
-        <Directory Id='PuppetLabs' Name="$(var.OurCompanyName)">
-          <Directory Id='INSTALLDIR' Name="$(var.OurProductName)">
+      <Directory Id="C:\" >
+        <Directory Id='PuppetLabs' Name="contegix">
+          <Directory Id='INSTALLDIR' Name="puppet">
             <Directory Id='sys' Name='sys'>
               <Directory Id='ruby' Name ='ruby'>
                 <Directory Id='ruby_bin' Name='bin'>
@@ -159,7 +159,7 @@
                       Account="[PUPPET_AGENT_ACCOUNT_DOMAIN]\[PUPPET_AGENT_ACCOUNT_USER]"
                       Password="[PUPPET_AGENT_ACCOUNT_PASSWORD]"
                       Description="Periodically fetches and applies configurations from a Puppet master server."
-                      DisplayName="Puppet Agent"
+                      DisplayName="Contegix Puppet Agent"
                       Interactive="no"
                       Name="$(var.PuppetServiceName)"
                       Start="auto"
@@ -253,8 +253,8 @@
         </Directory>
       </Directory>
       <!-- The CommonAppDataFolder is automatically filled in for us. -->
-      <Directory Id="CommonAppDataFolder" Name="CommonAppData">
-        <Directory Id="PuppetLabsAppData" Name="PuppetLabs">
+      <Directory Id="CommonAppDataFolder" Name="C:\contegix">
+        <Directory Id="PuppetLabsAppData" Name="puppet-data">
           <Directory Id="FacterAppData" Name="facter">
             <Directory Id="FactsDotD" Name="facts.d">
               <Component Id="PuppetInstallerFacts" Permanent="yes" Guid="4E7C234B-2837-4459-A20E-9503A922FCB9">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Include>
-  <?define OurCompanyName="Puppet Labs"?>
-  <?define OurCompanyNameWord="PuppetLabs"?>
+  <?define OurCompanyName="contegix"?>
+  <?define OurCompanyNameWord="contegix"?>
   <?define OurCommonProductNameWord="PuppetInstaller"?>
 
   <!-- Component Versions.  We expect the build system to define these values
@@ -47,15 +47,15 @@
     <?define DialogBitmap="dlgbmp-pe.bmp" ?>
     <?define PuppetServiceName="pe-puppet" ?>
   <?else ?>
-    <?define OurProductName="Puppet" ?>
-    <?define OurProductNameWord="Puppet" ?>
+    <?define OurProductName="Contegix Puppet" ?>
+    <?define OurProductNameWord="Contegix Puppet" ?>
     <?define NextStepLink="http://links.puppetlabs.com/windows-installer-next-steps-foss" ?>
     <?define HelpLink="http://links.puppetlabs.com/customer-support-foss" ?>
     <?define ManualLink="http://links.puppetlabs.com/windows-manual-foss" ?>
     <?define VersionUIString="$(var.PuppetDescTag)" ?>
     <?define BitmapFolder="wix\ui\bitmaps" ?>
     <?define DialogBitmap="dlgbmp-foss.bmp" ?>
-    <?define PuppetServiceName="puppet" ?>
+    <?define PuppetServiceName="contegix-puppet" ?>
   <?endif ?>
 
   <?if $(var.Platform) = x64 ?>
