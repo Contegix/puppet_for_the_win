@@ -141,7 +141,6 @@
         </Directory>
       </Directory>
       <!-- The application itself -->
-      <Directory Id="C:\" >
         <Directory Id='PuppetLabs' Name="contegix">
           <Directory Id='INSTALLDIR' Name="puppet">
             <Directory Id='sys' Name='sys'>
@@ -251,9 +250,8 @@
             </Directory>
           </Directory>
         </Directory>
-      </Directory>
       <!-- The CommonAppDataFolder is automatically filled in for us. -->
-      <Directory Id="CommonAppDataFolder" Name="C:\contegix">
+      <Directory Id="ContegixFolder" Name="contegix">
         <Directory Id="PuppetLabsAppData" Name="puppet-data">
           <Directory Id="FacterAppData" Name="facter">
             <Directory Id="FactsDotD" Name="facts.d">

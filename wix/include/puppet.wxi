@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Include>
-  <?define OurCompanyName="contegix"?>
-  <?define OurCompanyNameWord="contegix"?>
+  <?define OurCompanyName="Contegix"?>
+  <?define OurCompanyNameWord="Contegix"?>
   <?define OurCommonProductNameWord="PuppetInstaller"?>
 
   <!-- Component Versions.  We expect the build system to define these values
@@ -48,7 +48,7 @@
     <?define PuppetServiceName="pe-puppet" ?>
   <?else ?>
     <?define OurProductName="Contegix Puppet" ?>
-    <?define OurProductNameWord="Contegix Puppet" ?>
+    <?define OurProductNameWord="ContegixPuppet" ?>
     <?define NextStepLink="http://links.puppetlabs.com/windows-installer-next-steps-foss" ?>
     <?define HelpLink="http://links.puppetlabs.com/customer-support-foss" ?>
     <?define ManualLink="http://links.puppetlabs.com/windows-manual-foss" ?>
