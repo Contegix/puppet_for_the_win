@@ -165,7 +165,7 @@
                       Type="ownProcess"
                       ErrorControl="normal"
                       Vital="yes"
-                      Arguments="-rubygems &quot;[INSTALLDIR]service\daemon.rb&quot;"
+                      Arguments="-rubygems &quot;[INSTALLDIR]service\daemon.rb&quot; --confdir &quot;C:/contegix/puppet-data/puppet/etc/&quot; --logdest &quot;C:/contegix/puppet-data/puppet/var/log/puppet.log&quot;"
                   />
                     <ServiceControl Id="ServiceControlOptions" Start="install" Stop="both" Remove="uninstall" Name="$(var.PuppetServiceName)" Wait="yes" />
                   </Component>
