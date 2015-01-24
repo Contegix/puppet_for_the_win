@@ -74,7 +74,7 @@
       <!-- The start menu shortcuts -->
       <Directory Id='ProgramMenuFolder'>
         <Directory Id='PuppetShortcutDir' Name="$(var.OurProductName)">
-          <Component Id="PuppetShortcuts" Guid="0B69C3FF-8967-4F8A-AC71-0EAE34E91ACC" Win64="$(var.Win64)">
+          <Component Id="PuppetShortcuts" Guid="0B69C3FF-8967-4F8A-AC71-0EAE34E91ACD" Win64="$(var.Win64)">
             <Shortcut Id="PuppetShortcut"
               Name="Run Puppet Agent"
               Description="Run Puppet in an interactive command window"
@@ -165,7 +165,7 @@
                       Type="ownProcess"
                       ErrorControl="normal"
                       Vital="yes"
-                      Arguments="-rubygems &quot;[INSTALLDIR]service\daemon.rb&quot; --confdir &quot;C:/contegix/puppet-data/puppet/etc/&quot; --logdest &quot;C:/contegix/puppet-data/puppet/var/log/puppet.log&quot;"
+                      Arguments="-rubygems &quot;[INSTALLDIR]service\daemon.rb&quot; --confdir &quot;C:/contegix/puppet-data/puppet/etc/&quot; --logdest &quot;C:/contegix/puppet-data/puppet/var/log/puppet.log&quot; --vardir &quot;C:/contegix/puppet-data/puppet/var/&quot; --ssldir &quot;C:/contegix/puppet-data/puppet/etc/ssl/&quot;"
                   />
                     <ServiceControl Id="ServiceControlOptions" Start="install" Stop="both" Remove="uninstall" Name="$(var.PuppetServiceName)" Wait="yes" />
                   </Component>
