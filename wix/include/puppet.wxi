@@ -30,7 +30,7 @@
        upgrade code needs to be the same for both packages. -->
   <!-- DO NOT CHANGE THIS UUID.  EVER.  WE CANNOT DO UPGRADES THE WAY WE WANT
        IF IT CHANGES. REALLY!  DON'T DO IT! -->
-  <?define UpgradeCode="2AD3D11C-61B3-4710-B106-B4FDEC5FA358" ?>
+  <?define UpgradeCode="336e6450-7d5a-40c8-b68a-9595515d7ec3" ?>
 
   <?define CommunityLink="http://links.puppetlabs.com/windows-installer-starting-out" ?>
   <?define ForgeLink="http://links.puppetlabs.com/forge-windows" ?>

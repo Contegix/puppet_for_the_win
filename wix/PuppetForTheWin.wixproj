@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>3.5</ProductVersion>
-    <ProjectGuid>{4a82f66a-b315-47f1-bdc3-369cb158cbf3}</ProjectGuid>
+    <ProjectGuid>{3f33419c-6fbd-4f04-85fa-24b793156801}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>WixProjectLearning</OutputName>
     <OutputType>Package</OutputType>
