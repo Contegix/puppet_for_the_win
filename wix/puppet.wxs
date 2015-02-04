@@ -713,6 +713,7 @@
       </Custom>
     </InstallUISequence>
     <InstallExecuteSequence>
+      <Custom Action="SetRootDrive" Before="CostInitialize" />
       <!-- INSTALLDIR -->
       <Custom Action='SaveCmdLineInstallDir' Before='AppSearch' />
       <Custom Action='SetFromCmdLineInstallDir' After='AppSearch'>
