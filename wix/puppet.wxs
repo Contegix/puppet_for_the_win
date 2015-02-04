@@ -660,10 +660,14 @@
                   Return="ignore" />
     <?endif?>
 
+    <!-- Force install to the C: drive -->
+    <CustomAction Id="SetRootDrive" Property="ROOTDRIVE" Value="C:\" />
+
     <!-- First, save off properties specified on the command line Second,
          restore the properties set by the command line overriding the recalled
          value from the registry -->
     <InstallUISequence>
+      <Custom Action="SetRootDrive" Before="CostInitialize" />
       <!-- INSTALLDIR -->
       <Custom Action='SaveCmdLineInstallDir' Before='AppSearch' />
       <Custom Action='SetFromCmdLineInstallDir' After='AppSearch'>
